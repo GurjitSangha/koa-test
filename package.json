@@ -4,7 +4,7 @@
   "description": "v0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha test/"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/GurjitSangha/koa-test#readme",
   "dependencies": {
-    "koa": "^1.2.1"
+    "koa": "^1.2.1",
+    "mocha": "^3.0.0"
   }
 }
