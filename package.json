@@ -17,9 +17,10 @@
   },
   "homepage": "https://github.com/GurjitSangha/koa-test#readme",
   "dependencies": {
+    "chai": "*",
     "koa": "^1.2.1",
     "mocha": "^2.2.5",
     "mocha-junit-reporter": "^1.11.1",
-    "chai": "*"
+    "request": "^2.74.0"
   }
 }

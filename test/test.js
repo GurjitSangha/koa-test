@@ -1,9 +1,18 @@
 var expect = require('chai').expect;
+var request = require('request');
 
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when value is not present', function(){
-      expect([1,2,3].indexOf(4)).to.equal(-1);
+describe('API', function(){
+  describe('/', function(){
+    it('should return hello world string', function(){
+      request('http://localhost:3000/', function(err, res, body){
+        expect(body).to.equal('Hello World');
+      });
+    });
+
+    it('should return status 200', function(){
+      request('http://localhost:3000/', function(err, res, body){
+        expect(res.statusCode).to.equal(200);
+      })
     })
-  })
-})
+  });
+});
