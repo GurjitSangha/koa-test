@@ -3,3 +3,8 @@ test:
     - mocha test --reporter mocha-junit-reporter:
         environment:
           MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: foo-bar-123
